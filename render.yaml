@@ -24,3 +24,15 @@ services:
       - type: rewrite
         source: /a/*
         destination: /a
+# Environment groups
+envVarGroups:
+  - name: conc-settings
+    envVars:
+      - key: CONCURRENCY
+        value: 2
+      - key: SECRET
+        generateValue: true
+  - name: stripe
+    envVars:
+      - key: STRIPE_API_URL
+        value: https://api.stripe.com/v2
