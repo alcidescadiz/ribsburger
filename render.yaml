@@ -10,9 +10,9 @@ services:
       generation: automatic # Enable service previews
     buildFilter:
       paths:
-        - /**/*.js
+        - ./**/*.js
       ignoredPaths:
-        - /**/*.test.js
+        - ./**/*.test.js
     headers:
       - path: /*
         name: X-Frame-Options
